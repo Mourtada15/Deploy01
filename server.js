@@ -27,10 +27,11 @@ sequilize.sync()
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors("*"));
+app.use(cors());
 app.use('/login', login)
 
 app.get('/',(req,res)=>{
+ res.setHeader("Access-Control-Allow-Credentials", "true");
  res.send("hello world")
 })
 
