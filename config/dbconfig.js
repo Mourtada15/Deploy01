@@ -1,10 +1,10 @@
 
 import { Sequelize } from "sequelize";
 
-const sequelize = new Sequelize('fintech', 'root', '4B3VMbY94wgUk5sopV9F4NKtg3va6wog', {
-    dialect: 'postgres',
-    host: "postgres://root:4B3VMbY94wgUk5sopV9F4NKtg3va6wog@dpg-clr0ffae9h4c73ar3d60-a.oregon-postgres.render.com/fintech",
-    port: '5432',
+const sequelize = new Sequelize('defaultdb', 'avnadmin', 'AVNS_z_Yl3hKPlUt5bFkUucl', {
+    dialect: 'mysql',
+    host: "fintech-hassanmourtada15-395f.a.aivencloud.com",
+    port: '24309',
   
  
 });
